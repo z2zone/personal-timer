@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Minimal Timer",
+  "version": "1.0.0",
+  "description": "A basic timer extension",
+  "icons": {
+    "16": "images/clock.png",
+    "48": "images/clock.png",
+    "128": "images/clock.png"
+  },
+  "action":{
+    "default_popup": "popup/index.html",
+    "default_title": "Simple Timer",
+    "default_icon": {
+        "16": "images/clock.png",
+        "32": "images/clock.png",
+        "48": "images/clock.png",
+        "128": "images/clock.png"
+    }
+  }
+} 
