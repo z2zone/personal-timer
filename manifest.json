@@ -17,5 +17,6 @@
         "48": "images/clock.png",
         "128": "images/clock.png"
     }
-  }
+  },
+  "permissions": ["storage"]
 } 
