@@ -18,5 +18,8 @@
         "128": "images/clock.png"
     }
   },
-  "permissions": ["storage"]
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background/background.js"
+  }
 } 
