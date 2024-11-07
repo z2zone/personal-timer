@@ -1,9 +1,17 @@
 
 let taskList = [];
+function updateTime() {
+    chrome.storage.local.get(["timer"], (res) => {
+        const timerCounter = document.querySelector(".timer-counter");
+        timerCounter.textContent = res.timer;
+    });
+}
+updateTime();
+setInterval(updateTime, 1000);
 
 const startTimerButton = document.querySelector('.start-stop-button');
 startTimerButton.addEventListener('click', () => {
-    chrome.storage.local.get(["isRunning"],(res)=>{
+    chrome.storage.local.get(["isRunning"], (res) => {
         chrome.storage.local.set({isRunning: !res.isRunning});
     });
 });
